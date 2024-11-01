@@ -59,12 +59,14 @@ The key folders are as follows:
 - **public/**: Contains public assets, such as the favicon, which are served as-is.
 
 ### Steps to Modify Components
-1. Navigate to `src/components` for any reusable UI elements or `src/pages` for individual pages.
+1. Navigate to `src/shared/components` for any reusable UI elements or `src/views/pages` for individual pages.
 2. Modify the desired component or page.
 3. Save your changes, and they will automatically reflect in the development server thanks to Vite's hot module replacement (HMR).
 
 ### Global Styles
-The main stylesheets and CSS configurations are stored in `src/styles`. Update the global styles here to maintain consistency across the website.
+The main stylesheets and CSS configurations are stored in `src/assets/scss`. Update the global styles here or in `src/style.css` to maintain consistency across the website.
+For SASS reference, visit [SASS Docs](https://sass-lang.com/)
+TailwindCSS is also being used, check the tailwind.config.js file to make your changes to how tailwind is being used in this project. For reference, visit  [Tailwind Docs](https://tailwindcss.com/)
 
 ---
 
