@@ -9,7 +9,6 @@ Welcome to the SISTN_Web repository, the source code for SISTN (Society of Infor
 4. [Making Changes](#making-changes)
 5. [Building for Production](#building-for-production)
 6. [Deploying to Hostinger](#deploying-to-hostinger)
-7. [License](#license)
 
 ---
 
