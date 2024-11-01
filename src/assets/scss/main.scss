@@ -1,0 +1,49 @@
+/*!
+ * Copyright (c) 2021. 390labs Limited
+ */
+
+// Core
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/base';
+@import 'core/layout';
+@import 'core/spacing';
+
+// Utilities
+@import 'utils/text';
+
+// Components
+@import 'components/form';
+@import 'components/buttons';
+@import 'components/switch';
+@import 'components/gradients';
+@import 'components/modal';
+@import 'components/category';
+@import 'components/icon';
+@import 'components/navbar';
+@import 'components/card';
+
+@import 'pages/components';
+
+//Animations
+@import 'animations/keyframes';
+@import 'animations/movements';
+
+//Custom
+@import "utils/customization";
+@import "utils/colors";
+
+@import "pages/auth";
+@import "pages/home";
+
+#content {
+  background-color: #F7F8FA;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.pace .pace-progress{background-color: $primary-color-deep; height:4px}
+

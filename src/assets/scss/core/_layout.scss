@@ -1,0 +1,52 @@
+/*!
+ * Copyright (c) 2020. 390labs Limited
+ */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main-container {
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+.container {
+  @include respond(phone) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.page-footer {
+  width: 100%;
+  padding: 1rem 0;
+  background: #FFFFFF;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-space-between-6-1 {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+}
+
+.accordion-button {
+  background-color: $white;
+  font-size: 1.4rem;
+}
+
+.accordion-body {
+  background-color: $white;
+  border: 3px solid $white;
+
+  hr {
+    color: $light-gray;
+  }
+}

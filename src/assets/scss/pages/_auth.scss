@@ -1,0 +1,95 @@
+.auth-container {
+  background-color: #F4ECFF;
+}
+
+.auth-1-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  padding-top: 2rem;
+
+  @include screen (large) {
+    grid-template-columns: 6fr 3fr;
+
+    padding-top: 10rem;
+  }
+
+  .auth-card {
+    background-color: #ffffff;
+    padding: 2rem;
+  }
+}
+
+.auth-1-welcome {
+  &--text{
+    margin-top: 1rem;
+    color: #8E79CB;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include screen (large) {
+      width: 50%;
+    }
+  }
+
+  .floating-image {
+    display: none;
+
+    @include screen (large) {
+      display: block;
+
+      margin-top: 4rem;
+      padding-right: 5rem;
+      text-align: right;
+    }
+
+    img {
+      width: 60%;
+    }
+  }
+}
+
+.auth-2-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 2rem;
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .floating-image {
+    display: none;
+
+    img {
+      width: 80%;
+    }
+
+    @include screen (large) {
+      display: block;
+
+      margin-top: 1rem;
+      padding-right: 5rem;
+      text-align: right;
+    }
+  }
+
+  .auth-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 100%;
+
+    @include screen (large) {
+      width: 50%;
+    }
+  }
+}
+
+.other-links {
+  color: #868F96;
+}
+

@@ -1,0 +1,92 @@
+.socialIcon {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon-instagram {
+  background-color: #F8D8E1;
+}
+
+.icon-linkedin {
+  background-color: #D0E3EF;
+}
+
+.icon-facebook {
+  background-color: #CFE8FC;
+}
+
+.icon-twitter {
+  background-color: #DAEEF9;
+}
+
+.icon-whatsapp {
+  background-color: #DCF4DF;
+}
+
+.icon-circle{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid currentColor;
+    .icon{
+      width: 26px;
+      height: 26px;
+    }
+}
+.icon-container {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 1rem;
+
+  .lni {
+    font-size: 1.5rem;
+    vertical-align: top;
+  }
+
+  &--primary {
+    border: 1px solid $primary-color-very-deep;
+
+    .lni {
+      color: $primary-color-very-deep;
+    }
+  }
+
+  &--yellow {
+    border: 1px solid $yellow-color;
+
+    .lni {
+      color: $yellow-color;
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $secondary-color;
+
+    .lni {
+      color: $secondary-color;
+    }
+  }
+
+  &--danger {
+    border: 1px solid $red-deep;
+
+    .lni {
+      color: $red-deep;
+    }
+  }
+
+  &--dark {
+    border: 1px solid $dark;
+
+    .lni {
+      color: $dark;
+    }
+  }
+}

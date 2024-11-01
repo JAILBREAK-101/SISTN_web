@@ -1,0 +1,154 @@
+/*!
+ * Copyright (c) 2020. 390labs Limited
+ */
+/* Imports for the SCSS Navigation Styles */
+@import '../core/mixins';
+
+/* === Scss for Navigation ==== */
+
+/* === You can tweak (add your JS) as this is built purely with CSS ==== */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1.2rem;
+
+    /* For the Nav Toggle Action */
+    position: relative;
+}
+
+// Generic Container for wrapping the toggle
+.container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    appearance: none;
+    -webkit-appearance: none;
+    background: black;
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+        width: 25px;
+        height: 5px;
+        cursor: pointer;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        background-color: black;
+        position: absolute;
+    }
+
+    &::before {
+        bottom: 10px;
+    }
+
+    &::after {
+        top: 10px;
+    }
+
+    @include respond(phone) {
+        display: block;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    // container for the image
+
+    &>.nav-icon {
+        display: block;
+        max-width: 100%;
+        min-height: 100%;
+    }
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+
+    .nav-item {
+        transition: transform 0.2s ease-in;
+        padding: 0.6rem 0.2rem;
+
+        &:hover {
+            transform: translateY(-2px);
+            font-weight: 600;
+            /* Add your own hover state */
+        }
+    }
+
+    &>.nav-link {
+        color: black;
+        font-size: 1.5em;
+    }
+
+    @include respond(phone) {
+        display: none !important;
+        flex-direction: column;
+    }
+}
+
+/* Nav-toggle action */
+
+.nav-toggle {
+    transition: transform-origin 0.2s ease-in-out, rotate 0.4s ease-out;
+
+    &:checked~.nav-list {
+        @include respond(phone) {
+            display: flex !important;
+            background-color: grey;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0.8rem 0.9rem;
+
+            /* Positioning Properties alongside the parent container */
+            position: fixed;
+            top: 6rem;
+            right: 0;
+            z-index: 1;
+        }
+    }
+
+
+    /* Changing the appearance of the navigation toggle */
+    &:checked {
+        width: 0;
+        translate: -20px;
+
+        &::before {
+            rotate: calc(-220deg);
+            translate: -2px 6px;
+        }
+
+        &::after {
+            rotate: calc(220deg);
+            translate: -2px -13px;
+        }
+    }
+}
+
+/* === JavaScript class to make header (Navigation and Logo) fixed ==== */
+.sticky-header {
+    position: sticky;
+    top: 10px;
+}
+
+.lni {
+  font-size: 1.7rem;
+}

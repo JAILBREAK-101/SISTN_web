@@ -1,0 +1,38 @@
+.category--listing {
+  //display: flex;
+  padding: 1rem 0;
+
+  //justify-content: space-between;
+
+  //border-right: 1px inset #cccccc;
+  border-bottom: 1px solid #cccccc;
+
+  &--image {
+    img {
+      width: auto;
+      height: 16rem;
+      //border-radius: 50%;
+      margin-right: .5rem;
+    }
+  }
+
+  &--name {
+    //display: flex;
+    //align-items: center;
+    color: $light-black;
+  }
+
+  &--vote-count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.category-results:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.category-contestants-results:not(:last-child) {
+  margin-bottom: 2rem;
+}

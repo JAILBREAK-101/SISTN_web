@@ -1,0 +1,119 @@
+/*!
+ * Copyright (c) 2020. 390labs Limited
+ */
+
+.card {
+  border: 0;
+
+  .result-icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid currentColor;
+    &.cl-green{
+      color: #116253;
+    }
+    &.cl-blue{
+      color: #002FDD;
+    }
+    &.cl-secondary{
+      color: $primary-color-deep;
+    }
+    &.cl-red{
+      color: #9E2020;
+    }
+    &.cl-yellow{
+      color: #C98400;
+    }
+    &.cl-black{
+      color: #08001F;
+    }
+    .icon{
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &-colored {
+    background-color: $primary-color-faint-2;
+  }
+
+  &-header {
+    background-color: $white;
+    padding: 1.2rem 1.6rem;
+  }
+
+  &-body {
+    padding: 1.4rem 1.6rem;
+
+    &__result{
+      display: flex;
+      flex-wrap: wrap;
+      @include screen (small) {
+        justify-content: center;
+      }
+      &.paid-voting{
+        width: 100%;
+        justify-content: space-around;
+      }
+      .title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+      }
+    }
+    &--item-list:not(:last-child) {
+      border-bottom: 1px solid $primary-color-faint-2;
+    }
+  }
+
+  &-footer {
+    background-color: $white;
+    padding: 1.2rem 1.6rem;
+
+    .lni {
+      font-size: 1rem;
+    }
+  }
+
+  &-bordered {
+    border-radius: .8rem;
+
+    &--default {
+      border: 1px solid #D6D8D9;
+    }
+
+    &--answer {
+      border: 2px solid $secondary-color;
+      box-shadow: 0 7px 32px rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  &-shadowed {
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, .05)
+  }
+}
+
+.createModal_card{
+  padding: 20px;
+  border: 1px solid #D6D8D9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .description{
+      display: flex;
+      align-items: center;
+      color: #000000;
+  }
+  .link{
+    .button{
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/*!
+ * Copyright (c) 2020. All rights reserved 390labs Limited.
+ */
+
+$navbar-height : 56px;
+$nav-height: 42px;
+
+$primary-color: #8767E3;
+$primary-color-faint: #c4b8e3;
+$primary-color-faint-2: #F4ECFF;
+$primary-color-deep: #563AA7;
+$primary-color-very-deep: #412C7D;
+$primary-light-color: #F3F0FC;
+$primary-light-color-hover: #E7E1FA;
+$primary-light-color-visited: #CFC2F4;
+$secondary-color: #2DC2A7;
+$blue-color: #00186F;
+$yellow-color: #C98400;
+$secondary-color-hover: #5AD9C2;
+$secondary-color-faint: #458535;
+$secondary-color-visited: #1A937D;
+$secondary-light-color: #E6FAF7;
+$secondary-light-color-hover: #CEF5EF;
+$secondary-light-color-visited: #9CECDE;
+$accent-color: #f4cb36;
+
+$dark: #726D76;
+$white: #ffffff;
+$black: #000000;
+$light-black: #08001F;
+$green:  #04a028;
+$green-1:  #116253;
+$page-bg-color: #F8F8F8;
+$link: #4D73FF;
+
+$brand-color-green-deep: #04a028;
+$brand-color-green-deep-disabled: #56c07c;
+$light-gray: #868F96;
+$light-gray-2: #F7F9F9;
+$gray: #EDEFF0;
+$gray-hover: #E3E4E5;
+$gray-disabled-text: #B0B2B2;
+$gray-1: #6B6C6C;
+$gray-2: #5e656a;
+$gray-3: #D6D8D9;
+$light-blue: #e2e0ec;
+$disabled-gray: #bcb7b7;
+$red: #C32C2C;
+$red-hover: #E07575;
+$red-deep: #770047;
+$red-disabled: #9c121e;
+
+$links-sidebar-color: #949494;
+$links-navbar-color: #F8F8F8;
+$links-sidebar-color-hover: #444444;
+$links-navbar-color-hover: #ffffff;
+
+$input-height:  calc(1.5em + 0.75rem + 2px);
+
+$breakpoint1 : '480px';
+$breakpoint2 : '768px';
+$breakpoint3 : '1024px';
+$breakpoint4 : '1280px';
+
+// Buttons
+$button-default-radius: 3px;
+$button-height: 40px;
+
+// Animation
+$bounce-ease: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+//Fonts
+$main-font: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$sub-header-font: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$header-font: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$logo-font: 'Domaine', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$x-small-percentage : 25%;
+$small-percentage: 33.33333333333%;
+$medium-percentage : 50%;
+$x-medium-percentage: 66.666666666%;
+$large-percentage: 75%;
+$x-large-percentage: 100%;
+
+.w-fit_content{
+  width: fit-content;
+}

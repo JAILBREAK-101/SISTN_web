@@ -1,0 +1,150 @@
+/*!
+ * Copyright (c) 2020. 390labs Limited
+ */
+
+@import "../core/variables";
+
+body {
+  font-family: $main-font;
+  line-height: 1.8;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+  margin-bottom: .4rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.7rem;
+}
+
+h2 {
+  font-size: 2.93rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p, li, td {
+  font-weight: 450;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+a.dropdown-item {
+    font-size: 1.5rem;
+}
+
+.text {
+  &-primary {
+    color: $primary-color !important;
+  }
+
+  &-primary-deep {
+    color: $primary-color-very-deep !important;
+  }
+
+  &-secondary {
+    color: $secondary-color !important;
+  }
+
+  &-muted {
+    color: $light-gray !important;
+  }
+
+  &-danger {
+    color: $red !important;
+  }
+
+  &-danger-deep {
+    color: $red-deep !important;
+  }
+
+  &-link {
+    color: $link !important;
+  }
+}
+
+.small {
+  font-size: 12px;
+}
+
+.bold {
+  font-family: $header-font;
+  font-weight: 800 !important;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.one-line-text {
+  text-overflow: ellipsis;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.lni {
+  vertical-align: text-top;
+}
+
+.word-wrap-ellipsis {
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lh-default {
+  line-height: 1.5;
+}
+
+.font-weight-light {
+  font-weight: 400 !important;
+}
+
+.font-weight-normal {
+  font-weight: 500 !important;
+}
+
+.font-weight-light-bold {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 600 !important;
+}
+
+.font-weight-bolder {
+  font-weight: 700 !important;
+}

@@ -1,0 +1,98 @@
+.voting-image {
+  --img-height: 500px;
+  --img-responsive-height: 300px;
+  &--event {
+    height: 500px;
+    max-height: 500px;
+    margin: auto;
+    @include screen (small) {
+      height: 300px;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &--contestant {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+
+    @include screen (small) {
+      height: 300px;
+    }
+    .bg-withBlur{
+      grid-row-start: 1;
+      grid-column-start: 1;
+      height: 500px;
+      width: 100%;
+      filter: blur(15px);
+      transform: scale(1.3);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include screen (small) {
+        height: 300px;
+      }
+    }
+    .img-container{
+      z-index: 2;
+      grid-row-start: 1;
+      grid-column-start: 1;
+      height: 300px;
+      width: auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include screen (small) {
+        height: 300px;
+      }
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &--mini {
+    margin: auto;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @include screen (large) {
+    height: 614px;
+    width: 614px;
+  }
+}
+
+.vote-buttons-section {
+  margin-top: 1.4rem;
+
+  //a, button {
+  //  @include screen (small) {
+  //    margin-bottom: 1rem;
+  //  }
+  //}
+  //
+  //@include screen (large) {
+  //  display: flex;
+  //  justify-content: space-between;
+  //}
+}
+
+.dropzone {
+  border-color: $secondary-color;
+  border-style: dashed;
+  border-width: 2px;
+
+  * {
+    color: $secondary-color;
+  }
+}

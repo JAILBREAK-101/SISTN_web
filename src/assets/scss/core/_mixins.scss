@@ -1,0 +1,91 @@
+/* MEDIA QUERIES ----------- */
+
+$breakpoint-small: 600px;
+$breakpoint-med-small: 750px;
+$breakpoint-med: 980px;
+$breakpoint-large: 1280px;
+$breakpoint-x-large: 1440px;
+
+/* MIXINS FOR MEDIA QUERIES ----------- */
+
+@mixin screen($size, $type: max, $pixels: 600) {
+  @if $size== "tiny" {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  @if $size== "small" {
+    @media screen and (max-width: $breakpoint-small) {
+      @content;
+    }
+  }
+  @if $size== "med-small" {
+    @media screen and (max-width: $breakpoint-med-small) {
+      @content;
+    }
+  } @else if $size== "med" {
+    @media screen and (max-width: $breakpoint-med) {
+      @content;
+    }
+  } @else if $size== "mid" {
+    @media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-med) {
+      @content;
+    }
+  } @else if $size== "middle" {
+    @media screen and (min-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if $size== "large" {
+    @media screen and (min-width: $breakpoint-med) {
+      @content;
+    }
+  } @else if $size== "x-large" {
+    @media screen and (min-width: $breakpoint-large) {
+      @content;
+    }
+  } @else if $size== "xx-large" {
+    @media screen and (min-width: $breakpoint-x-large) {
+      @content;
+    }
+  } @else if $size== "custom" {
+    // @media screen and ($type + -width : $pixels + px) {
+    // @content;
+    // }
+  }
+}
+
+//other mixins
+@mixin orb($color){
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: $color;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content
+    }; //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content
+    }; //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content
+    }; //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content
+    }; //1800
+  }
+}
+
+
+
