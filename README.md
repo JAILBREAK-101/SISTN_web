@@ -47,7 +47,7 @@ To start the development server and view the project on your local machine, use 
 ```bash
 npm run dev
 ```
-This will run the development server on [http://localhost:5173](http://localhost:5173) by default (or another port if 3000 is in use). Vite will automatically hot-reload changes, so any modifications you make will be visible without needing to refresh the browser.
+This will run the development server on [http://localhost:5173](http://localhost:5173) by default (or another port if 5173 is in use). Vite will automatically hot-reload changes, so any modifications you make will be visible without needing to refresh the browser.
 
 ---
 
