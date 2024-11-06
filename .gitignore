@@ -27,3 +27,15 @@ dist-ssr
 .env
 .env.local
 .env.development
+
+# PHP Server Dependencies
+php_server/vendor/
+
+# PHP Server Hidden Folder
+php_server/old/
+
+# PHP Server Environment Variables
+php_server/.env
+php_server/.env.local
+php_server/.env.development
+

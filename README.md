@@ -9,7 +9,8 @@ Welcome to the SISTN_Web repository, the source code for SISTN (Society of Infor
 4. [Making Changes](#making-changes)
 5. [Building for Production](#building-for-production)
 6. [Deploying to Hostinger](#deploying-to-hostinger)
-7. [License](#license)
+7. [PHP Server Setup](#php-server-setup)
+8. [Deploying the PHP Server to Hostinger](#deploying-the-php-server-to-hostinger)
 
 ---
 
@@ -93,6 +94,60 @@ To host this website on Hostinger, follow these steps:
 
 3. **Test the Deployment**:
    - Visit your domain to verify that the website is running correctly.
+
+Certainly! Here’s the additional section you requested:
+
+---
+
+## PHP Server Setup
+
+In addition to the main SISTN_Web frontend, there's also a PHP server component for handling backend operations. Follow these instructions to set up and deploy the PHP server.
+
+### Running the PHP Server Locally
+
+To run the PHP server on your local machine, follow these steps:
+
+1. **Install PHP**: Ensure PHP is installed on your system. You can verify by running:
+   ```bash
+   php -v
+   ```
+   If PHP is not installed, download and install it from [https://www.php.net/downloads](https://www.php.net/downloads).
+
+2. **Navigate to the PHP Server Directory**:
+   Go to the `php_server` directory within the project:
+   ```bash
+   cd php_server
+   ```
+
+3. **Start the PHP Server**:
+   Start a local PHP server using:
+   ```bash
+   php -S localhost:8000
+   ```
+   This will run the server on [http://localhost:8000](http://localhost:8000).
+
+4. **Configuration Settings**:
+   - Adjust any necessary configurations in the `php_server/config.php` file. This may include settings for database connections, API endpoints, or environment variables.
+   - Ensure the configuration matches your local development setup.
+
+### Deploying the PHP Server to Hostinger
+
+To deploy the PHP server on Hostinger, follow these steps:
+
+1. **Upload the `php_server` Folder**:
+   - Using an FTP client (like FileZilla) or the Hostinger File Manager, upload the entire `php_server` folder to the Hostinger server.
+   - Place it in the **public_html** directory or a specific subdirectory if it’s part of a subdomain.
+
+2. **Configure Server Settings**:
+   - Edit the `php_server/config/database.php` file on the server to ensure all settings (e.g., database credentials, API keys) are correct for production.
+
+3. **Test the PHP Server**:
+   - Visit `yourdomain.com/php_server` (or the respective URL path) to ensure the PHP server is running correctly on Hostinger.
+   - If you need URL rewriting or additional server configurations, add these settings to the `.htaccess` file in the `php_server` directory.
+
+---
+
+By following these instructions, you’ll be able to run and deploy the PHP server component of SISTN_Web effectively.
 
 ### Note on Updates
 Each time you make changes and rebuild the project, repeat the upload steps above with the newly generated `dist` folder.
