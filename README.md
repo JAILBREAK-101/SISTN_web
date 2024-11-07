@@ -11,6 +11,7 @@ Welcome to the SISTN_Web repository, the source code for SISTN (Society of Infor
 6. [Deploying to Hostinger](#deploying-to-hostinger)
 7. [PHP Server Setup](#php-server-setup)
 8. [Deploying the PHP Server to Hostinger](#deploying-the-php-server-to-hostinger)
+9. [Technology Used](#technology-used)
 
 ---
 
@@ -151,6 +152,27 @@ To deploy the PHP server on Hostinger, follow these steps:
 
 By following these instructions, you’ll be able to run and deploy the PHP server component of SISTN_Web effectively.
 
+## Technology Used
+
+### Frontend:
+- **React.js**: For building the user interface with a component-based architecture.
+- **Vite**: A next-generation build tool for faster development and optimized production builds.
+- **TailwindCSS**: Utility-first CSS framework for styling the application.
+- **SASS**: CSS preprocessor used for styling and improving maintainability.
+  
+### Backend:
+- **PHP**: For server-side logic and handling dynamic content.
+- **MySQL**: Used for database management.
+
+### Deployment:
+- **Hostinger**: Hosting platform for deploying the application.
+- **FTP**: For transferring files to the server.
+  
+### Development Tools:
+- **Node.js**: JavaScript runtime for building the frontend.
+- **npm/yarn**: For managing dependencies and scripts.
+- **Git**: Version control for managing the codebase.
+
+
 ### Note on Updates
 Each time you make changes and rebuild the project, repeat the upload steps above with the newly generated `dist` folder.
-
