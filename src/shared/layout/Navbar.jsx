@@ -67,8 +67,8 @@ export const Navbar = () => {
                                     links={[
                                         { label: "History", href: "/history" },
                                         { label: "Organization and Constitution", href: "/organization" },
-                                        // { label: "Memorandum of Association", href: "/about/memorandum-of-association" },
-                                        // { label: "Article of Association", href: "/about/article-of-association" },
+                                        { label: "Memorandum of Association", href: "/about/memorandum-of-association" },
+                                        { label: "Article of Association", href: "/about/article-of-association" },
                                     ]}
                                     isOpen={openDropDown === "about"}
                                     onToggle={() => handleDropdownToggle("about")}

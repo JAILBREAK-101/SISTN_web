@@ -18,7 +18,7 @@ const MembershipFormPage = () => {
         {/* Online Form Button */}
         <div className="flex justify-center">
           {/* PHP Form */}
-          <a href="https://sistn.org/membership-form/memberform.php">
+          <a href="https://sistn.org/php-membership-form-page/memberform.php">
             <Button
               body={"Online Form"}
               size='large'

@@ -13,19 +13,25 @@ const Welcome = () => {
             image: InformationManagementImage,
             title: "Information Management",
             description: "We provide expertise in managing and organizing critical information for public and private sector organizations.",
-            link: "#"
+            link: "#",
+            ctaText: "Read More",
+            upcoming: false
         },
         {
             image: DigitalMediaAndTechnologiesImage,
             title: "Digital Media & Technologies",
             description: "We offer cutting-edge solutions in digital media, big data analytics, and machine learning applications.",
-            link: "#"
+            link: "#",
+            ctaText: "Read More",
+            upcoming: false
         },
         {
             image: ProfessionalDevelopmentImage,
             title: "Professional Development",
             description: "We provide professional services to upgrade skills and knowledge for members and corporate organizations.",
-            link: "#"
+            link: "#",
+            ctaText: "Read More",
+            upcoming: false
         },
     ];
 
@@ -77,6 +83,7 @@ const Welcome = () => {
                                 title={eachService.title}
                                 description={eachService.description}
                                 link={eachService.link}
+                                ctaText={eachService.ctaText}
                             />
                         ))}
                     </div>

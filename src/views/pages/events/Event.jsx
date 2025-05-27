@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { MdPartyMode, MdCalendarMonth, MdMeetingRoom, MdClass } from "react-icons/md";
+import SISTNINDUCTIONIMAGE from '../../../assets/images/SISTN-2025-INDUCTION.jpg';
+import { Link } from "react-router-dom";
 
 const Event = () => {
   const [events, setEvents] = useState([]);
+  const imageTitle = "SISTN INDUCTION IMAGE";
+  const buttonLink = "/membership-offline-form";
+  const buttonLinkText = "Register Now"
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -69,6 +74,30 @@ const Event = () => {
             Watch on YouTube
           </button>
         </div>
+        
+        <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+            <MdCalendarMonth className="mr-2 text-sistn-green" />
+            Annual Conference & Induction
+          </h2>
+          <p className="text-gray-700 mb-4">
+            The SISTN Conference and Induction Ceremony occur annually, welcoming new members into the SISTN community and fostering professional development.
+          </p>
+          
+          <div className="bg-gray-100 p-6 rounded-lg shadow-lg col-span-4">
+            <img
+              src={SISTNINDUCTIONIMAGE}
+              alt={imageTitle}
+              className="w-full h-100 object-cover"
+            />
+          </div>
+
+          <div className='text-center mt-4'>
+            <button className="bg-sistn-blue text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none max-md:text-2xl">
+                <Link to={buttonLink}>{buttonLinkText}</Link>
+            </button>
+          </div>
+        </div>
 
       <div className="grid gap-8 lg:grid-cols-2">
         {/* Render all events from the database dynamically */}
@@ -125,19 +154,6 @@ const Event = () => {
           </p>
           <ul className="list-disc list-inside text-gray-700">
             <li>Corporate organizations can showcase their products, and startups are encouraged to participate.</li>
-          </ul>
-        </div>
-
-        <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-            <MdCalendarMonth className="mr-2 text-sistn-green" />
-            Annual Conference & Induction
-          </h2>
-          <p className="text-gray-700 mb-4">
-            The SISTN Conference and Induction Ceremony occur annually, welcoming new members into the SISTN community and fostering professional development.
-          </p>
-          <ul className="list-disc list-inside text-gray-700">
-            <li>The conference lasts three to four days and focuses on unity and professional growth.</li>
           </ul>
         </div>
       </div>
